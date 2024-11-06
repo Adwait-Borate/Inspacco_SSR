@@ -1,0 +1,125 @@
+body {
+    background-color: #e6f2ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 300px !important;  /* Set a fixed width */
+    height: auto !important;  /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.language-selector {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.language-selector span {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.language-selector span.active {
+    font-weight: bold;
+    background-color: #003366;
+    color: white;
+    padding: 5px 10px;  /* Adjust this to give some space */
+    margin: 0 5px;      /* Add margin to create space around */
+}
+
+.upload-section {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section p {
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+button {
+    background-color: #003366;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00254d;
+}
+
+footer {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .App {
+        padding: 15px;
+    }
+    
+    .logo {
+        max-width: 120px;
+    }
+    
+    .upload-section {
+        padding: 10px;
+    }
+    
+    button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 15px 0;
+    }
+}

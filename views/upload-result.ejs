@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<div class="App">
+    <header>
+        <img src="/images/inspacco_logo.png" alt="Inspacco" class="logo">
+    </header>
+    <div class="result-message">
+        <% if (success) { %>
+            <h2>Files uploaded successfully!</h2>
+        <% } else { %>
+            <h2>Error uploading files</h2>
+            <p><%= error %></p>
+        <% } %>
+    </div>
+    <!-- <a href="/" class="back-button">Back to Upload</a> -->
+</div>
+
+<!-- <%- include('partials/footer') %> -->

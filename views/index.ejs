@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="App">
+    <header>
+        <img src="/images/inspacco_logo.png" alt="Inspacco" class="logo">
+    </header>
+    <div class="language-selector">
+        <span id="hi-lang">हिंदी</span> | <span id="en-lang" class="active">English</span>
+    </div>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="upload-section">
+            <p id="site-photos-text">Before starting work, please upload <br> <b>site photos</b></p>
+            <input type="file" name="sitePhotos" accept="image/*" capture="environment" multiple>
+        </div>
+        <div class="upload-section">
+            <p id="survey-report-text">After survey completion, please upload <b>survey / visit report</b></p>
+            <input type="file" name="surveyReports" accept=".pdf,.doc,.docx" multiple>
+        </div>
+        <button type="submit" id="submit-button">Submit</button>
+    </form>
+</div>
+
+<%- include('partials/footer') %>
